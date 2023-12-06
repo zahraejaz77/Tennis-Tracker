@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import OTPScreen from "./Screens/OTPScreen";
 import HomeScreen from "./Screens/HomeScreen";
 import LoginScreen from "./Screens/LoginScreen";
+import PhoneNumberScreen from "./Screens/PhoneNumberScreen";
 
 export default function App() {
   return (
