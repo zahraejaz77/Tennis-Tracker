@@ -9,6 +9,7 @@ import PhoneNumberScreen from "./Screens/PhoneNumberScreen";
 export default function App() {
   return (
     <View className="flex-1 relative">
+      <StatusBar style="auto" />
       <SafeAreaView
         style={{
           paddingTop: Platform.OS === "android" ? 40 : 0,
@@ -17,7 +18,7 @@ export default function App() {
         className="flex flex-1"
       >
         <View className="mx-4 relative z-40 justify-between h-auto">
-          <OTPScreen />
+          <HomeScreen />
           <StatusBar style="auto" />
         </View>
       </SafeAreaView>

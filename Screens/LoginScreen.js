@@ -1,7 +1,12 @@
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
+import PhoneNumberScreen from "./PhoneNumberScreen";
 
-export default function LoginScreen() {
+export default function LoginScreen({ navigation }) {
+  const onPress = () => {
+    // Navigate to PhoneNumberScreen
+    navigation.navigate("PhoneNumberScreen");
+  };
   return (
     <View
       style={{ flex: 1, position: "relative" }}
@@ -46,7 +51,7 @@ export default function LoginScreen() {
           style={{ backgroundColor: "#31da60" }}
           className="rounded-full self-center absolute h-12 w-56 justify-center top-80"
         >
-          <TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
             <Text className="text-white text-center text-lg font-medium">
               Login
             </Text>
