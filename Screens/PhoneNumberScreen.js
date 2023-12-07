@@ -1,7 +1,7 @@
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
 
-export default function PhoneNumberScreen() {
+export default function PhoneNumberScreen({ navigation }) {
   return (
     <View
       style={{ flex: 1, position: "relative" }}
@@ -30,7 +30,7 @@ export default function PhoneNumberScreen() {
           style={{ backgroundColor: "#31da60", width: 350, height: 57 }}
           className="rounded-full self-center absolute justify-center top-56"
         >
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("OTPScreen")}>
             <Text className="text-white text-center text-lg font-medium">
               Continue
             </Text>

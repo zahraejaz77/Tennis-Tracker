@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import React from "react";
 
-export default function Slider3() {
+export default function Slider3({ navigation }) {
   return (
     <View className="absolute ">
       <ImageBackground
@@ -24,7 +24,7 @@ export default function Slider3() {
         </Text>
       </View>
       <View className="z-40 absolute self-center w-72 top-96 my-48">
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Login")}>
           <Text className="text-black text-xl font-bold text-right top-32">
             SKIP
           </Text>

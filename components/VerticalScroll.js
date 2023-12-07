@@ -3,7 +3,7 @@ import React from "react";
 
 export default function VerticalScroll() {
   return (
-    <View className="flex-row  justify-center top-7 self-center items-center">
+    <View className="flex-row  justify-center top-3 self-center items-center">
       <ScrollView vertical>
         <View className="justify-center flex-col items-center py-5">
           <Image

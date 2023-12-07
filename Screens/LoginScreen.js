@@ -3,10 +3,6 @@ import React from "react";
 import PhoneNumberScreen from "./PhoneNumberScreen";
 
 export default function LoginScreen({ navigation }) {
-  const onPress = () => {
-    // Navigate to PhoneNumberScreen
-    navigation.navigate("PhoneNumberScreen");
-  };
   return (
     <View
       style={{ flex: 1, position: "relative" }}
@@ -51,7 +47,9 @@ export default function LoginScreen({ navigation }) {
           style={{ backgroundColor: "#31da60" }}
           className="rounded-full self-center absolute h-12 w-56 justify-center top-80"
         >
-          <TouchableOpacity onPress={onPress}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("PhoneNumberScreen")}
+          >
             <Text className="text-white text-center text-lg font-medium">
               Login
             </Text>

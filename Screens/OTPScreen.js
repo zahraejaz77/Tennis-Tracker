@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-export default function OTPScreen() {
+export default function OTPScreen({ navigation }) {
   return (
     <View
       style={{ flex: 1, position: "relative" }}
@@ -48,7 +48,7 @@ export default function OTPScreen() {
         style={{ backgroundColor: "#31da60" }}
         className="rounded-full self-center absolute h-12 w-56 justify-center inset-y-80 top-96 my-64"
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
           <Text className="text-white text-center text-lg font-medium">
             Verify Now
           </Text>
