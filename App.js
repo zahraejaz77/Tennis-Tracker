@@ -16,6 +16,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import Matches from "./Screens/Matches";
 import PlayerScreen from "./Screens/PlayerScreen";
 import MoreScreen from "./Screens/MoreScreen";
+import TrackMatch from "./Screens/TrackMatch";
 const Tab = createBottomTabNavigator();
 function Home() {
   return (
@@ -33,6 +34,9 @@ function Home() {
             iconName = "md-people-outline";
           } else if (route.name === "More") {
             iconName = "md-options-outline";
+          }
+          if (route.name === "Track Match") {
+            iconName = "browsers-sharp";
           }
 
           // You can return any component that you like here!
@@ -57,6 +61,11 @@ function Home() {
       <Tab.Screen
         name="Players"
         component={PlayerScreen}
+        options={{ headerShown: false }}
+      />
+      <Tab.Screen
+        name="Track Match"
+        component={TrackMatch}
         options={{ headerShown: false }}
       />
       <Tab.Screen

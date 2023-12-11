@@ -17,7 +17,9 @@ export default function PlayerScreen() {
           style={{ width: 40, height: 40, backgroundColor: "#31da60" }}
           className=" rounded-full "
         >
-          <Ionicons name="tv-outline" size={24} color="white" />
+          <View className="top-2 left-2">
+            <Ionicons name="tv-outline" size={24} color="white" />
+          </View>
         </View>
       </View>
       <View className="flex-col self-center justify-around top-9 space-y-2">
