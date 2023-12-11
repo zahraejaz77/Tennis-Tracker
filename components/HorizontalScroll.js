@@ -9,7 +9,10 @@ export default function HorizontalScroll() {
         contentContainerStyle={{ paddingHorizontal: 15 }}
         showsHorizontalScrollIndicator={false}
       >
-        <View className="flex justify-center items-center rounded-3xl py-3 space-y-1 mb-24 top-24 px-4">
+        <View
+          style={{ width: 142, length: 100 }}
+          className="flex justify-center items-center rounded-3xl py-3 space-y-1 mb-24 top-24 px-4 bg-white"
+        >
           <Image
             source={require("../assets/two_players.jpg")}
             className=" rounded-lg"

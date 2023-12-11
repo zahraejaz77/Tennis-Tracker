@@ -28,8 +28,9 @@ function Home() {
             iconName = "md-home-outline";
           } else if (route.name === "Matches") {
             iconName = "md-calendar-outline";
-          } else if (route.name === "Players") {
-            iconName = "person";
+          }
+          if (route.name === "Players") {
+            iconName = "md-people-outline";
           } else if (route.name === "More") {
             iconName = "md-options-outline";
           }
@@ -54,12 +55,12 @@ function Home() {
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="PlayerScreen"
+        name="Players"
         component={PlayerScreen}
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="MoreScreen"
+        name="More"
         component={MoreScreen}
         options={{ headerShown: false }}
       />
