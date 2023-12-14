@@ -17,6 +17,8 @@ import Matches from "./Screens/Matches";
 import PlayerScreen from "./Screens/PlayerScreen";
 import MoreScreen from "./Screens/MoreScreen";
 import TrackMatch from "./Screens/TrackMatch";
+import { SupabaseAuthProvider } from "./SupabaseAuthProvider";
+import OTPLoginComponent from "./Screens/OTPLoginComponent";
 const Tab = createBottomTabNavigator();
 function Home() {
   return (
@@ -80,45 +82,53 @@ function Home() {
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Slider1"
-          component={Slider1}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Slider2"
-          component={Slider2}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Slider3"
-          component={Slider3}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Login"
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="PhoneNumberScreen"
-          component={PhoneNumberScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="OTPScreen"
-          component={OTPScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SupabaseAuthProvider>
+      console.log("inapp");
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="OTPLoginComponent"
+            component={OTPLoginComponent}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Slider1"
+            component={Slider1}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Slider2"
+            component={Slider2}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Slider3"
+            component={Slider3}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="PhoneNumberScreen"
+            component={PhoneNumberScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="OTPScreen"
+            component={OTPScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ headerShown: false }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SupabaseAuthProvider>
 
     /*<View className="flex-1 relative">
         <SafeAreaView
