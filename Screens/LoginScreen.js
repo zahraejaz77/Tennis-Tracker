@@ -4,31 +4,23 @@ import PhoneNumberScreen from "./PhoneNumberScreen";
 
 export default function LoginScreen({ navigation }) {
   return (
-    <View
-      style={{ flex: 1, position: "relative" }}
-      className=" text-center flex-1 flex-col "
-    >
-      {/*<Image
-        className="absolute h-full w-full"
-        style={{ width: 282, height: 83 }}
-        source={require("../assets/bg1.jfif")}
-  />*/}
+    <View className="flex flex-col ">
       <Image
-        className="self-center top-7"
+        className="self-center  mt-20 my-auto"
         style={{ width: 282, height: 83 }}
         source={require("../assets/40lovelogo.png")}
       />
       <View
-        style={{ backgroundColor: "#191919", width: 340, height: 450 }}
-        className="absolute rounded-3xl self-center top-40 "
+        className="bg-[#191919] h-2/3 w-11/12 align-middle flex self-center  rounded-3xl "
       >
-        <Text className="text-white self-center text-lg top-7 font-bold">
+        <View className="flex flex-col mt-24">
+        <Text className="text-white text-2xl self-center font-bold">
           Login
         </Text>
-        <Text className="text-white self-center text-sm text-center top-11">
+        <Text className="text-white self-center text-sm text-center ">
           Please enter your mobile
         </Text>
-        <Text className="text-white self-center text-sm text-center top-11">
+        <Text className="text-white self-center text-sm text-center ">
           number to Login
         </Text>
         <TextInput
@@ -44,18 +36,16 @@ export default function LoginScreen({ navigation }) {
           </Text>
         </TouchableOpacity>
         <View
-          style={{ backgroundColor: "#31da60" }}
-          className="rounded-full self-center absolute h-12 w-56 justify-center top-80"
+          className="rounded-full self-cente justify-center "
         >
           <TouchableOpacity
             onPress={() => navigation.navigate("PhoneNumberScreen")}
           >
-            <Text className="text-white text-center text-lg font-medium">
-              Login
-            </Text>
+          
           </TouchableOpacity>
         </View>
-        <View className="flex-row top-64 self-center">
+        </View>
+        <View className="flex-row  self-center">
           <Text className="text-white  text-sm ">Don't have an account?</Text>
           <Text style={{ color: "#31da60" }} className=" text-sm ">
             {" "}

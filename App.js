@@ -119,20 +119,5 @@ export default function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
-
-    /*<View className="flex-1 relative">
-        <SafeAreaView
-          style={{
-            paddingTop: Platform.OS === "android" ? 38 : 0,
-            flex: 1,
-          }}
-          className="flex flex-1"
-        >
-          <View className="relative z-40 justify-between h-auto">
-
-            <StatusBar style="auto" />
-          </View>
-        </SafeAreaView>
-        </View> */
   );
 }

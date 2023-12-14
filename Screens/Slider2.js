@@ -6,13 +6,19 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React from "react";
+import { Dimensions } from "react-native";
 
 export default function Slider2({ navigation }) {
+  const windowWidth = Dimensions.get("window").width;
+  const windowHeight = Dimensions.get("window").height;
   return (
     <View className="absolute ">
       <ImageBackground
         source={require("../assets/Slider2.jpg")}
-        style={{ width: 400, height: 800 }}
+        style={{
+          width: windowWidth,
+          height: windowHeight,
+        }}
       ></ImageBackground>
       <View className="z-40 absolute self-center w-80 top-96 my-48">
         <Text className="text-white text-lg font-bold text-center ">
