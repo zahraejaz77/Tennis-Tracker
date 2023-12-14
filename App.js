@@ -82,6 +82,7 @@ function Home() {
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
+<<<<<<< HEAD
     <SupabaseAuthProvider>
       console.log("inapp");
       <NavigationContainer>
@@ -144,5 +145,46 @@ export default function App() {
           </View>
         </SafeAreaView>
         </View> */
+=======
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Slider1"
+          component={Slider1}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Slider2"
+          component={Slider2}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Slider3"
+          component={Slider3}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PhoneNumberScreen"
+          component={PhoneNumberScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="OTPScreen"
+          component={OTPScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+>>>>>>> 72bad4e9496ff5ba26c29945f4658cffaa026162
   );
 }
