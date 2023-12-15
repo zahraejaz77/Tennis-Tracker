@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MatchTrack() {
   return (
-    <View className="flex-col bottom-5">
+    <View className="flex-col bottom-5 self-center">
       <View className="flex-row ">
         <View
           style={{

@@ -28,7 +28,7 @@ export default function TrackMatch() {
       <MatchTrack />
       <View
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
-        className=" rounded-full bottom-3"
+        className=" rounded-full bottom-3 self-center align-middle"
       >
         <TouchableOpacity>
           <Text className=" text-white text-xl text-center font-semibold top-3">

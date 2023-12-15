@@ -8,7 +8,6 @@ import {
 import React from "react";
 import { Dimensions } from "react-native";
 
-
 export default function Slider3({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
   const windowHeight = Dimensions.get("window").height;

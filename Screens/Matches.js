@@ -72,18 +72,18 @@ export default function Matches() {
             </View>
           </View>
 
-          <View className="flex-row items-stretch top-16 z-40 space-x-40">
+          <View className="flex-row items-stretch align-middle self-center top-16 z-40 space-x-40">
             <Text className="text-black text-base font-semibold  ">
-              Trending Players
+              Matches For you
             </Text>
             <Text className="text-gray-300 text-sm font-normal ">See All</Text>
           </View>
-          <View className="flex-row  justify-center self-center bottom-5">
-            <View className="justify-evenly self-center items-center">
+          <View className=" flex flex-row self-center bottom-5 align-middle items-stretch">
+            <View className="justify-evenly items-center  align-middle self-center">
               <ScrollView vertical>
                 <View
                   style={{ width: 170, length: 212 }}
-                  className="flex- justify-around items-center rounded-3xl py-3 space-y-1 top-24 px-4 bg-white"
+                  className="flex  align-middle self-center justify-around items-center rounded-3xl py-3 space-y-1  top-24 px-4 bg-white"
                 >
                   <Image
                     source={require("../assets/Gift.jpg")}
@@ -132,7 +132,7 @@ export default function Matches() {
             <ScrollView vertical>
               <View
                 style={{ width: 170, height: 212 }}
-                className="flex justify-center items-center rounded-3xl py-3  bg-white space-y-1  top-24 px-4"
+                className="flex justify-center items-center rounded-3xl py-3  bg-white space-y-1  top-24 px-4  align-middle self-center"
               >
                 <Image
                   source={require("../assets/two_players.jpg")}

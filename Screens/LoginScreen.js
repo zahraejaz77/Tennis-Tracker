@@ -10,40 +10,38 @@ export default function LoginScreen({ navigation }) {
         style={{ width: 282, height: 83 }}
         source={require("../assets/40lovelogo.png")}
       />
-      <View
-        className="bg-[#191919] h-2/3 w-11/12 align-middle flex self-center  rounded-3xl "
-      >
+      <View className="bg-[#191919] h-2/3 w-11/12 align-middle flex self-center  rounded-3xl ">
         <View className="flex flex-col mt-24">
-        <Text className="text-white text-2xl self-center font-bold">
-          Login
-        </Text>
-        <Text className="text-white self-center text-sm text-center ">
-          Please enter your mobile
-        </Text>
-        <Text className="text-white self-center text-sm text-center ">
-          number to Login
-        </Text>
-        <TextInput
-          placeholder="Mobile Number"
-          placeholderTextColor="#FFFFFF"
-          keyboardType="numeric"
-          className="border-b-2 border-b-slate-600 self-center top-24"
-          style={{ width: "80%" }}
-        ></TextInput>
-        <TouchableOpacity>
-          <Text className="text-white text-right mr-7 text-sm top-28 ">
-            Forgot Mobile Number?
+          <Text className="text-white text-2xl self-center font-bold">
+            Login
           </Text>
-        </TouchableOpacity>
-        <View
-          className="rounded-full self-cente justify-center "
-        >
-          <TouchableOpacity
-            onPress={() => navigation.navigate("PhoneNumberScreen")}
-          >
-          
+          <Text className="text-white self-center text-sm text-center ">
+            Please enter your mobile
+          </Text>
+          <Text className="text-white self-center text-sm text-center ">
+            number to Login
+          </Text>
+          <TextInput
+            placeholder="Mobile Number"
+            placeholderTextColor="#FFFFFF"
+            keyboardType="numeric"
+            className="border-b-2 border-b-slate-600 self-center top-24"
+            style={{ width: "80%" }}
+          ></TextInput>
+          <TouchableOpacity>
+            <Text className="text-white text-right mr-7 text-sm top-28 ">
+              Forgot Mobile Number?
+            </Text>
           </TouchableOpacity>
-        </View>
+          <View className="rounded-full self-center w-2/4 justify-center bg-[#31da60] w">
+            <TouchableOpacity
+              onPress={() => navigation.navigate("PhoneNumberScreen")}
+            >
+              <Text className="text-white  text-xl self-center font-bold">
+                Login
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
         <View className="flex-row  self-center">
           <Text className="text-white  text-sm ">Don't have an account?</Text>

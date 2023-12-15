@@ -21,7 +21,7 @@ import TopBar from "../components/TopBar";
 export default function HomeScreen() {
   return (
     <View className="flex-1 relative">
-      <View className="relative z-40 justify-between h-auto mx-4">
+      <View className="relative z-40 h-auto mx-4">
         <View style={{ backgroundColor: "#FAFAFA" }} className=" relative z-40">
           <TopBar></TopBar>
           {/* User Greeting*/}
@@ -35,28 +35,24 @@ export default function HomeScreen() {
           </View>
 
           {/*  search bar*/}
-          <View
-            style={{ width: 350, height: 45 }}
-            className="flex-row  z-50 top-16 bg-white justify-between"
-          >
+          <View className="flex-row self-center  align-middle z-50 top-16 bg-white justify-between w-11/12">
             <Ionicons name="search-outline" size={24} color="grey" />
-
+            <View className="z-50 right-32">
+              <TextInput
+                placeholder="Search"
+                placeholderTextColor={"gray"}
+                className="text-base text-gray-700"
+              ></TextInput>
+            </View>
             <MaterialIcons
               name="settings-input-component"
               size={24}
               color="grey"
             />
           </View>
-          <View className="z-50 top-5 left-10">
-            <TextInput
-              placeholder="Search"
-              placeholderTextColor={"gray"}
-              className="text-base text-gray-700"
-            ></TextInput>
-          </View>
 
           {/*  matches nearby */}
-          <View className="flex-row items-stretch  space-x-40 top-20">
+          <View className="flex-row  space-x-40 top-20 self-center justify-around align-baseline">
             <Text className="text-black text-base font-semibold">
               Matches Nearby
             </Text>
@@ -66,7 +62,7 @@ export default function HomeScreen() {
           {/*horizontal scroll*/}
           <HorizontalScroll></HorizontalScroll>
           {/*  Trending Players */}
-          <View className="flex-row items-stretch top-4 z-40 space-x-40">
+          <View className="flex-row items-stretch top-4 z-40 space-x-40 self-center">
             <Text className="text-black text-base font-semibold  ">
               Trending Players
             </Text>
