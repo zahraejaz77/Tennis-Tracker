@@ -17,6 +17,7 @@ import Matches from "./Screens/Matches";
 import PlayerScreen from "./Screens/PlayerScreen";
 import MoreScreen from "./Screens/MoreScreen";
 import TrackMatch from "./Screens/TrackMatch";
+import MatchInfo from "./Screens/MatchInfo";
 
 const Tab = createBottomTabNavigator();
 function Home() {
@@ -55,8 +56,8 @@ function Home() {
         screenOptions={{ headerShown: false }}
       />
       <Tab.Screen
-        name="Matches"
-        component={Matches}
+        name="MatchInfo"
+        component={MatchInfo}
         options={{ headerShown: false }}
       />
       <Tab.Screen
