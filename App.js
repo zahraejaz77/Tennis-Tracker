@@ -19,6 +19,10 @@ import MoreScreen from "./Screens/MoreScreen";
 import TrackMatch from "./Screens/TrackMatch";
 import MatchInfo from "./Screens/MatchInfo";
 import MatchFormat from "./Screens/MatchFormat";
+import MatchReview from "./Screens/MatchReview";
+
+import TMBallPlay from "./Screens/TMBallPlay";
+import MatchComplete from "./Screens/MatchComplete";
 
 const Tab = createBottomTabNavigator();
 function Home() {
@@ -57,8 +61,8 @@ function Home() {
         screenOptions={{ headerShown: false }}
       />
       <Tab.Screen
-        name="MatchFormat"
-        component={MatchFormat}
+        name="MatchReview"
+        component={MatchReview}
         options={{ headerShown: false }}
       />
       <Tab.Screen
@@ -67,8 +71,8 @@ function Home() {
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="Track Match"
-        component={TrackMatch}
+        name="MatchComplete"
+        component={MatchComplete}
         options={{ headerShown: false }}
       />
       <Tab.Screen
