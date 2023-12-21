@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 
-export default function MatchComplete() {
+export default function MatchComplete({ navigation }) {
   return (
     <View className="relative flex-1 flex-col top-7 align-middle self-center items-stretch">
       <View className="flex-row">
@@ -134,7 +134,7 @@ export default function MatchComplete() {
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full self-center align-middle top-80 flex-row justify-center"
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("MatchOverview")}>
           <Text className=" text-white text-xl text-center font-semibold top-3 align-middle">
             Done
           </Text>

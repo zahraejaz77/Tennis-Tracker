@@ -23,6 +23,56 @@ import MatchReview from "./Screens/MatchReview";
 
 import TMBallPlay from "./Screens/TMBallPlay";
 import MatchComplete from "./Screens/MatchComplete";
+import MatchOverview from "./Screens/MatchOverview";
+import TMSelectshot from "./Screens/TMSelectshot";
+
+const TrackStack = createNativeStackNavigator();
+function TrackNewMacth() {
+  return (
+    <TrackStack.Navigator>
+      <TrackStack.Screen
+        name="MatchInfo"
+        component={MatchInfo}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="MatchFormat"
+        component={MatchFormat}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="MatchReview"
+        component={MatchReview}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="TrackMatch"
+        component={TrackMatch}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="TMBallPlay"
+        component={TMBallPlay}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="TMSelectshot"
+        component={TMSelectshot}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="MatchComplete"
+        component={MatchComplete}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="MatchOverview"
+        component={MatchOverview}
+        options={{ headerShown: false }}
+      />
+    </TrackStack.Navigator>
+  );
+}
 
 const Tab = createBottomTabNavigator();
 function Home() {
@@ -61,8 +111,8 @@ function Home() {
         screenOptions={{ headerShown: false }}
       />
       <Tab.Screen
-        name="MatchReview"
-        component={MatchReview}
+        name="Matches"
+        component={Matches}
         options={{ headerShown: false }}
       />
       <Tab.Screen
@@ -71,8 +121,8 @@ function Home() {
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="MatchComplete"
-        component={MatchComplete}
+        name="TrackNewMatch"
+        component={TrackNewMacth}
         options={{ headerShown: false }}
       />
       <Tab.Screen
@@ -126,20 +176,5 @@ export default function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
-
-    /*<View className="flex-1 relative">
-        <SafeAreaView
-          style={{
-            paddingTop: Platform.OS === "android" ? 38 : 0,
-            flex: 1,
-          }}
-          className="flex flex-1"
-        >
-          <View className="relative z-40 justify-between h-auto">
-
-            <StatusBar style="auto" />
-          </View>
-        </SafeAreaView>
-        </View> */
   );
 }

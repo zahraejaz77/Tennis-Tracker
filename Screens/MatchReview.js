@@ -8,15 +8,25 @@ import {
   TextInput,
   ScrollView,
   TouchableOpacity,
+  Dimensions,
 } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import VerticalScroll from "../components/VerticalScroll";
 import HorizontalScroll from "../components/HorizontalScroll";
-export default function MatchReview() {
+
+export default function MatchReview({ navigation }) {
+  const windowWidth = Dimensions.get("window").width;
+  const windowHeight = Dimensions.get("window").height;
   return (
-    <View classsName="relative flex flex-col">
+    <View
+      style={{
+        width: windowWidth,
+        height: windowHeight,
+      }}
+      classsName=" bg-[#D9D9D9] relative flex flex-col "
+    >
       <Text className="text-black top-5 self-center text-base font-semibold">
         Match Review
       </Text>
@@ -66,11 +76,13 @@ export default function MatchReview() {
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full self-center align-middle top-5 flex-row justify-center"
       >
-        <TouchableOpacity>
-          <Text className=" text-white text-med text-center font-semibold top-3 align-middle">
-            Track Live Match
-          </Text>
-        </TouchableOpacity>
+        <>
+          <TouchableOpacity onPress={() => navigation.navigate("TrackMatch")}>
+            <Text className=" text-white text-med text-center font-semibold top-3 align-middle">
+              Track Live Match
+            </Text>
+          </TouchableOpacity>
+        </>
       </View>
     </View>
   );

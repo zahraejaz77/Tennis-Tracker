@@ -13,7 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import ScoreGridBallIn from "../components/ScoreGridBallIn";
 import MatchTrackBallIn from "../components/MatchTrackBallIn";
 
-export default function TMBallPlay() {
+export default function TMBallPlay({ navigation }) {
   return (
     <View className="  flex-1 relative z-40 mx-4 ">
       <View className="flex-row justify-between top-6">
@@ -30,7 +30,7 @@ export default function TMBallPlay() {
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full bottom-3 self-center align-middle"
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("TMSelectshot")}>
           <Text className=" text-white text-xl text-center font-semibold top-3">
             Undo
           </Text>

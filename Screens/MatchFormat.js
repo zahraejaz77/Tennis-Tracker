@@ -8,7 +8,7 @@ import {
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function MatchFormat() {
+export default function MatchFormat({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
   const windowHeight = Dimensions.get("window").height;
   return (
@@ -87,7 +87,7 @@ export default function MatchFormat() {
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full self-center align-middle top-5 flex-row justify-center"
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("MatchReview")}>
           <Text className=" text-white text-xl text-center font-semibold top-3 align-middle">
             Next
           </Text>

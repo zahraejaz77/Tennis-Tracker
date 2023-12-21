@@ -13,7 +13,7 @@ import MatchTrack from "../components/MatchTrack";
 import UndoButton from "../components/UndoButton";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function TrackMatch() {
+export default function TrackMatch({ navigation }) {
   return (
     <View className="  flex-1 relative z-40 mx-4 ">
       <View className="flex-row justify-between top-6">
@@ -30,7 +30,7 @@ export default function TrackMatch() {
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full bottom-3 self-center align-middle"
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("TMBallPlay")}>
           <Text className=" text-white text-xl text-center font-semibold top-3">
             Undo
           </Text>

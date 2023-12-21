@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-export default function ScoreGrid() {
+export default function ScoreGridSelectShot() {
   return (
-    <View className="relative flex-1 flex-col top-7 align-middle self-center items-stretch">
+    <View className="absolute flex-1 flex-col top-12 align-middle self-center items-stretch">
       <View className="flex-row">
         <View className="w-44 border-b-2 border-b-gray-300">
           <Text>Maidah Highflyer</Text>

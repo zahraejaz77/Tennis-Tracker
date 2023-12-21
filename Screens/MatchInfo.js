@@ -8,7 +8,7 @@ import {
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function MatchInfo() {
+export default function MatchInfo({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
   const windowHeight = Dimensions.get("window").height;
   return (
@@ -18,7 +18,7 @@ export default function MatchInfo() {
         height: windowHeight,
         backgroundColor: "#FAFAFA",
       }}
-      className=" flex-1 flex-col align-middle self-center space-y-4"
+      className=" flex-1 flex-col align-middle self-center space-y-3"
     >
       <Text className="text-black top-5 self-center text-base font-semibold">
         Match Info
@@ -115,7 +115,7 @@ export default function MatchInfo() {
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full self-center align-middle top-5 flex-row justify-center"
       >
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("MatchFormat")}>
           <Text className=" text-white text-xl text-center font-semibold top-3 align-middle">
             Next
           </Text>
