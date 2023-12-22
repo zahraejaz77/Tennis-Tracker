@@ -84,6 +84,21 @@ export default function MatchReview({ navigation }) {
           </TouchableOpacity>
         </>
       </View>
+      <Text className="text-black top-5 self-start text-base font-semibold">
+        New Match
+      </Text>
+      <View
+        style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
+        className=" rounded-full self-center align-middle top-36 flex-row justify-center"
+      >
+        <>
+          <TouchableOpacity onPress={() => navigation.navigate("TrackMatch")}>
+            <Text className=" text-white text-med text-center font-semibold top-3 align-middle">
+              Track Live Match
+            </Text>
+          </TouchableOpacity>
+        </>
+      </View>
     </View>
   );
 }
