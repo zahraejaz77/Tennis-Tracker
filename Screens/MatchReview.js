@@ -15,6 +15,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import VerticalScroll from "../components/VerticalScroll";
 import HorizontalScroll from "../components/HorizontalScroll";
+import { AntDesign } from "@expo/vector-icons";
 
 export default function MatchReview({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
@@ -72,21 +73,20 @@ export default function MatchReview({ navigation }) {
           </Text>
         </View>
       </View>
-      <View
-        style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
-        className=" rounded-full self-center align-middle top-5 flex-row justify-center"
-      >
-        <>
-          <TouchableOpacity onPress={() => navigation.navigate("TrackMatch")}>
-            <Text className=" text-white text-med text-center font-semibold top-3 align-middle">
-              Track Live Match
-            </Text>
-          </TouchableOpacity>
-        </>
-      </View>
-      <Text className="text-black top-5 self-start text-base font-semibold">
+
+      <Text className="text-black  self-start text-base top-16 font-semibold pl-8">
         New Match
       </Text>
+
+      <View className="bg-white w-11/12 h-2/5 self-center rounded-2xl top-20">
+        <View className="flex flex-row self-center">
+          <Text className="pr-4 font-bold top-2">Share Match</Text>
+          <View className="rounded-full bg-[#C7D2CE] p-2">
+            <AntDesign name="upload" size={24} color="black" />
+          </View>
+        </View>
+      </View>
+
       <View
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full self-center align-middle top-36 flex-row justify-center"

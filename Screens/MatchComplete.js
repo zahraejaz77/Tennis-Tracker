@@ -136,7 +136,7 @@ export default function MatchComplete({ navigation }) {
       >
         <TouchableOpacity onPress={() => navigation.navigate("MatchOverview")}>
           <Text className=" text-white text-xl text-center font-semibold top-3 align-middle">
-            Done
+            Match Complete
           </Text>
         </TouchableOpacity>
       </View>
