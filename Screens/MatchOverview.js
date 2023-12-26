@@ -83,9 +83,9 @@ export default function MatchOverview() {
           <Text className=" text-base font-semibold"> 46%</Text>
         </View>
         <View className="flex ">
-          <View className="w-11/12 self-center  bg-[#D5DEDB] rounded-full h-8"></View>
-          <View className="w-6/12 self-center bottom-8 bg-[#3E7D68] left-10 rounded-br-full rounded-tr-full h-8"></View>
-          <View className="w-6/12 self-center bottom-16 bg-[#31DA60] right-10 rounded-bl-full rounded-tl-full h-8"></View>
+          <View className="w-11/12 self-center bg-[#D5DEDB] rounded-full h-8"></View>
+          <View className="w-1/2 self-center bottom-8 bg-[#3E7D68] left-10 rounded-br-full rounded-tr-full h-8"></View>
+          <View className="w-1/2 self-center bottom-16 bg-[#31DA60]  right-10  rounded-bl-full rounded-tl-full h-8"></View>
         </View>
         <View className="flex-row justify-around mx-4">
           <Text className=" text-base font-semibold">57%</Text>
