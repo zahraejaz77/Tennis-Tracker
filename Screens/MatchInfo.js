@@ -18,7 +18,7 @@ export default function MatchInfo({ navigation }) {
         height: windowHeight,
         backgroundColor: "#FAFAFA",
       }}
-      className=" flex-1 flex-col align-middle self-center space-y-3"
+      className=" flex-1 flex-col align-middle self-center space-y-1"
     >
       <Text className="text-black top-5 self-center text-base font-semibold">
         Match Info

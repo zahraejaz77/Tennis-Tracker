@@ -1,11 +1,9 @@
 import {
   View,
   Text,
-  Image,
   ImageBackground,
   TouchableOpacity,
   StatusBar,
-  SafeAreaView,
 } from "react-native";
 import React from "react";
 import { Dimensions } from "react-native";
@@ -14,10 +12,16 @@ export default function Slider1({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
   const windowHeight = Dimensions.get("window").height;
   return (
-    <View className="flex-1 relative">
+    <View
+      className="flex-1 relative"
+      style={{
+        width: windowWidth,
+        height: windowHeight,
+      }}
+    >
       <StatusBar style="auto" />
 
-      <View className="relative z-40 justify-between h-auto">
+      <View className=" relative z-40 justify-between h-auto">
         <View className="absolute ">
           <ImageBackground
             source={require("../assets/Slider1.jpg")}

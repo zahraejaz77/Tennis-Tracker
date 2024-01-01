@@ -4,7 +4,7 @@ import React from "react";
 export default function ScoreGridSelectShot() {
   return (
     <View className="absolute flex-1 flex-col top-12 align-middle self-center items-stretch">
-      <View className="flex-row">
+      <View className="flex-row bg-[#31DA60] ">
         <View className="w-44 border-b-2 border-b-gray-300">
           <Text>Maidah Highflyer</Text>
         </View>
@@ -45,7 +45,7 @@ export default function ScoreGridSelectShot() {
           <Text> 12</Text>
         </View>
       </View>
-      <View className="flex-row">
+      <View className="flex-row bg-[#CCCCCC]">
         <View className="w-44 ">
           <Text>Maidah Highflyer</Text>
         </View>

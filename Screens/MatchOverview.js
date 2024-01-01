@@ -78,7 +78,7 @@ export default function MatchOverview() {
           <Text className=" text-base font-semibold">57%</Text>
           <Text className="text-gray-500 text-base font-semibold">
             {" "}
-            1ST SERVICE
+            1ST SERVES
           </Text>
           <Text className=" text-base font-semibold"> 46%</Text>
         </View>

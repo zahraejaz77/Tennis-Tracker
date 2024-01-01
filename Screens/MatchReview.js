@@ -28,12 +28,12 @@ export default function MatchReview({ navigation }) {
       }}
       classsName=" bg-[#D9D9D9] relative flex flex-col "
     >
-      <Text className="text-black top-5 self-center text-base font-semibold">
+      <Text className="text-black top-4 self-center text-base font-semibold">
         Match Review
       </Text>
       <View
         style={{ width: 370, height: 156 }}
-        className="bg-white flex-row justify-evenly self-center rounded-lg mx-3 top-12"
+        className="bg-white flex-row justify-evenly self-center rounded-lg mx-3 top-5"
       >
         <View className=" flex-col items-center top-4">
           <Image
@@ -74,11 +74,11 @@ export default function MatchReview({ navigation }) {
         </View>
       </View>
 
-      <Text className="text-black  self-start text-base top-16 font-semibold pl-8">
+      <Text className="text-black  self-start text-base top-6 font-semibold pl-8">
         New Match
       </Text>
 
-      <View className="bg-white w-11/12 h-72 self-center rounded-2xl top-20">
+      <View className="bg-white w-11/12 h-64 self-center rounded-2xl top-7">
         <View className="flex flex-row self-center">
           <Text className="pr-4 font-bold top-2">Share Match</Text>
           <View className="rounded-full bg-[#C7D2CE] p-2">
@@ -139,13 +139,25 @@ export default function MatchReview({ navigation }) {
           </View>
         </View>
       </View>
-      <View className=" flex flex-row justify-around top-14 mx-3">
-        <View className="self-center bg-[#DBEAE5] h-24 w-36 mx-10 rounded-lg">
-          <AntDesign name="user" size={24} color="gray" />
+      <View className=" flex flex-row justify-around top-10 mx-6">
+        <View className="self-center bg-[#DBEAE5] h-24 w-28 mx-10 rounded-lg justify-center">
+          <View className="self-center">
+            <AntDesign name="user" size={24} color="gray" />
+          </View>
           <Text className="text-lg text-gray-500 self-center"> 2 users</Text>
         </View>
-        <View className="self-center bg-[#DBEAE5] h-24 mx-10 w-36 rounded-lg"></View>
-        <View className="self-center bg-[#DBEAE5] h-24 w-36 mx-10 rounded-lg"></View>
+        <View className="self-center bg-[#DBEAE5] h-24 w-28 mx-10 rounded-lg justify-center">
+          <View className="self-center">
+            <AntDesign name="table" size={24} color="gray" />
+          </View>
+          <Text className="text-lg text-gray-500 self-center"> Grass</Text>
+        </View>
+        <View className="self-center bg-[#DBEAE5] h-24 w-28 mx-10 rounded-lg justify-center">
+          <View className="self-center">
+            <Ionicons name="star-outline" size={24} color="gray" />
+          </View>
+          <Text className="text-lg text-gray-500 self-center"> 2 users</Text>
+        </View>
       </View>
 
       <View
