@@ -50,9 +50,14 @@ export default function TMSelectshot({ navigation }) {
               Backhand
             </Text>
           )}
-          {/*<Text className="text-center  text-white text-lg">
-            {isToggled ? "Forehand" : "Backhand"}
-    </Text>*/}
+          <View className="flex-row justify-between">
+            <Text className=" text-sm font-semibold text-gray-500 bottom-7 right-4">
+              Forehand
+            </Text>
+            <Text className=" text-sm font-semibold text-gray-500 bottom-7 left-4">
+              Backhand
+            </Text>
+          </View>
         </TouchableOpacity>
       </View>
 
