@@ -83,6 +83,11 @@ export default function MatchInfo({ navigation }) {
               backgroundColor: "white",
               borderColor: "green",
             }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
@@ -98,6 +103,11 @@ export default function MatchInfo({ navigation }) {
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Player"
             dropdownItemStyles={{ backgroundColor: "white" }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
@@ -113,6 +123,11 @@ export default function MatchInfo({ navigation }) {
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Player"
             dropdownItemStyles={{ backgroundColor: "white" }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
@@ -128,6 +143,11 @@ export default function MatchInfo({ navigation }) {
             boxStyles={{ borderColor: "white" }}
             placeholder="Court or Location Name"
             dropdownItemStyles={{ backgroundColor: "white" }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
@@ -143,6 +163,11 @@ export default function MatchInfo({ navigation }) {
             boxStyles={{ borderColor: "white" }}
             placeholder="Selected Surface"
             dropdownItemStyles={{ backgroundColor: "white" }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
@@ -161,6 +186,11 @@ export default function MatchInfo({ navigation }) {
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Facility"
             dropdownItemStyles={{ backgroundColor: "white" }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
@@ -179,6 +209,11 @@ export default function MatchInfo({ navigation }) {
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Rally"
             dropdownItemStyles={{ backgroundColor: "white" }}
+            dropdownStyles={{
+              backgroundColor: "white",
+              borderColor: "white",
+              borderRadius: 8,
+            }}
           ></SelectList>
         </View>
       </View>
