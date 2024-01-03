@@ -40,24 +40,26 @@ export default function TMSelectshot({ navigation }) {
           onPress={handleToggle}
         >
           {isToggled ? (
-            <Text className="text-center text-white text-lg right-14 rounded-full bg-[#31DA60] ">
-              {" "}
-              Forehand
-            </Text>
+            <View className="flex-row justify-between">
+              <Text className="text-center w-40 text-white text-lg right-14 rounded-full bg-[#31DA60] ">
+                {" "}
+                Forehand
+              </Text>
+              <Text className=" text-sm font-semibold text-gray-500 top-1 right-10">
+                Backhand
+              </Text>
+            </View>
           ) : (
-            <Text className="text-center text-white text-lg left-14 rounded-full bg-[#31DA60]  ">
-              {" "}
-              Backhand
-            </Text>
+            <View className="flex-row justify-between">
+              <Text className=" text-sm font-semibold text-gray-500 top-1 right-4">
+                Forehand
+              </Text>
+              <Text className=" w-40 text-center text-white text-lg  rounded-full bg-[#31DA60]  ">
+                {" "}
+                Backhand
+              </Text>
+            </View>
           )}
-          <View className="flex-row justify-between">
-            <Text className=" text-sm font-semibold text-gray-500 bottom-7 right-4">
-              Forehand
-            </Text>
-            <Text className=" text-sm font-semibold text-gray-500 bottom-7 left-4">
-              Backhand
-            </Text>
-          </View>
         </TouchableOpacity>
       </View>
 

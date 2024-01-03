@@ -42,8 +42,8 @@ export default function MatchInfo({ navigation }) {
     { label: "Dubai", value: "Dubai" },
   ];
   const dataSurface = [
-    { label: "Mom", value: "Mom" },
-    { label: "Dad", value: "Dad" },
+    { label: "Surface A", value: "Surface A" },
+    { label: "Surface B", value: "Surface B" },
     { label: "Ruth", value: "Ruth" },
   ];
   const dataFacility = [
@@ -61,14 +61,14 @@ export default function MatchInfo({ navigation }) {
       style={{
         width: windowWidth,
         height: windowHeight,
-        backgroundColor: "#FAFAFA",
+        backgroundColor: "#DCF9E4",
       }}
       className=" flex-1 flex-col align-middle self-center space-y-4"
     >
       <Text className="text-black top-5 self-center text-base font-semibold">
         Match Info
       </Text>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center relative top-7 rounded-lg z-50 justify-center flex-row">
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Tracker :
@@ -79,10 +79,14 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedTracker}
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Tracker"
+            dropdownItemStyles={{
+              backgroundColor: "white",
+              borderColor: "green",
+            }}
           ></SelectList>
         </View>
       </View>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View className="align-middle w-11/12 h-16 border relative border-green-400 bg-white self-center top-7 rounded-lg z-40 justify-center flex-row">
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Player 1 :
@@ -93,10 +97,11 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedPlayer1}
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Player"
+            dropdownItemStyles={{ backgroundColor: "white" }}
           ></SelectList>
         </View>
       </View>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View className="align-middle w-11/12 h-16 border relative border-green-400 bg-white self-center top-7 rounded-lg z-30 justify-center flex-row">
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Player 2 :
@@ -107,10 +112,11 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedPlayer2}
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Player"
+            dropdownItemStyles={{ backgroundColor: "white" }}
           ></SelectList>
         </View>
       </View>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View className="align-middle w-11/12 h-16 border relative border-green-400 bg-white self-center top-7 rounded-lg justify-center z-20 flex-row">
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Court :
@@ -121,10 +127,11 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedCourt}
             boxStyles={{ borderColor: "white" }}
             placeholder="Court or Location Name"
+            dropdownItemStyles={{ backgroundColor: "white" }}
           ></SelectList>
         </View>
       </View>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View className="align-middle w-11/12 h-16 border relative z-10 border-green-400 bg-white self-center top-7 rounded-lg  justify-center flex-row">
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Surface :
@@ -135,10 +142,14 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedSurface}
             boxStyles={{ borderColor: "white" }}
             placeholder="Selected Surface"
+            dropdownItemStyles={{ backgroundColor: "white" }}
           ></SelectList>
         </View>
       </View>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View
+        style={{ zIndex: 8 }}
+        className="align-middle w-11/12 h-16 border relative border-green-400 bg-white self-center top-7 rounded-lg justify-center flex-row"
+      >
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Facility:
@@ -149,10 +160,14 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedFacility}
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Facility"
+            dropdownItemStyles={{ backgroundColor: "white" }}
           ></SelectList>
         </View>
       </View>
-      <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center top-7 rounded-lg z-20 justify-center flex-row">
+      <View
+        style={{ zIndex: 5 }}
+        className="align-middle w-11/12 h-16 border relative  border-green-400 bg-white self-center top-7 rounded-lg justify-center flex-row"
+      >
         <Text className="text-black text-base font-semibold pl-4 top-4">
           {" "}
           Rally :
@@ -163,6 +178,7 @@ export default function MatchInfo({ navigation }) {
             setSelected={setSelectedRally}
             boxStyles={{ borderColor: "white" }}
             placeholder="Select Rally"
+            dropdownItemStyles={{ backgroundColor: "white" }}
           ></SelectList>
         </View>
       </View>
