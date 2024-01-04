@@ -108,7 +108,7 @@ function Home() {
       <Tab.Screen
         name="HomeScreen"
         component={HomeScreen}
-        screenOptions={{ headerShown: false }}
+        options={{ headerShown: false }} // Hide the header for HomeScreen
       />
       <Tab.Screen
         name="Matches"
