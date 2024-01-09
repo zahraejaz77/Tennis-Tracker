@@ -101,8 +101,12 @@ function Home() {
         },
         tabBarActiveTintColor: "white",
         tabBarInactiveTintColor: "white",
-        tabBarActiveBackgroundColor: "#31DA60",
-        tabBarInactiveBackgroundColor: "#31DA60",
+        tabBarActiveBackgroundColor: "#52E07A",
+        tabBarInactiveBackgroundColor: "#52E07A",
+        tabBarStyle: {
+          borderTopLeftRadius: 30,
+          borderTopRightRadius: 30,
+        },
       })}
     >
       <Tab.Screen

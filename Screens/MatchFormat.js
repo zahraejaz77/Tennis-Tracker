@@ -8,6 +8,7 @@ import {
 import React, { useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { SelectList } from "react-native-dropdown-select-list";
+import CheckBox from "../components/CheckBox";
 
 export default function MatchFormat({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
@@ -60,21 +61,7 @@ export default function MatchFormat({ navigation }) {
           AD Scoring
         </Text>
         <View className="w-3/5 left-3 top-2 align-middle">
-          <SelectList
-            data={dataADScoring}
-            setSelected={setSelectedADScoring}
-            boxStyles={{ borderColor: "white" }}
-            placeholder="Select AD Scoring"
-            dropdownItemStyles={{
-              backgroundColor: "white",
-              borderColor: "green",
-            }}
-            dropdownStyles={{
-              backgroundColor: "white",
-              borderColor: "white",
-              borderRadius: 8,
-            }}
-          ></SelectList>
+          <CheckBox Option1="Yes" Option2="No"></CheckBox>
         </View>
       </View>
       <View className="align-middle w-11/12 h-16 border border-green-400 bg-white self-center relative top-7 rounded-lg z-40 justify-center flex-row">
@@ -169,63 +156,6 @@ export default function MatchFormat({ navigation }) {
           ></SelectList>
         </View>
       </View>
-
-      {/*<View className="w-11/12 h-16 bg-white self-center top-7 rounded-lg z-20 justify-center">
-        <TextInput
-          placeholder="YES"
-          //placeholderTextColor={"gray"}
-          className="left-36 top-3 text-base text-gray-700 z-30"
-        ></TextInput>
-        <Text className="text-black text-base font-semibold bottom-4 pl-4">
-          {" "}
-          AD Scoring -
-        </Text>
-      </View>
-      <View className="w-11/12 h-16 bg-white self-center top-7 rounded-lg z-20 justify-center">
-        <TextInput
-          placeholder="3"
-          //placeholderTextColor={"gray"}
-          className="pl-24 top-3 text-base text-gray-700 z-30 left-11"
-        ></TextInput>
-        <Text className="text-black text-base font-semibold bottom-4 pl-4">
-          {" "}
-          Rounds -
-        </Text>
-      </View>
-      <View className="w-11/12 h-16 bg-white self-center top-7 rounded-lg z-20 justify-center">
-        <TextInput
-          placeholder="7"
-          //placeholderTextColor={"gray"}
-          className="pl-24 top-3 text-base text-gray-700 z-30 left-14"
-        ></TextInput>
-        <Text className="text-black text-base font-semibold bottom-4 pl-4">
-          {" "}
-          Games for set -
-        </Text>
-      </View>
-      <View className="w-11/12 h-16 bg-white self-center top-7 rounded-lg z-20 justify-center">
-        <TextInput
-          placeholder="Anytime"
-          //placeholderTextColor={"gray"}
-          className="pl-24 top-3 text-base text-gray-700 z-30 left-14"
-        ></TextInput>
-        <Text className="text-black text-base font-semibold bottom-4 pl-4">
-          {" "}
-          Tie Break at -
-        </Text>
-      </View>
-      <View className="w-11/12 h-16 bg-white self-center top-7 rounded-lg z-20 justify-center">
-        <TextInput
-          placeholder="No Rule"
-          //placeholderTextColor={"gray"}
-          className="pl-24 top-3 text-base text-gray-700 z-30 left-14"
-        ></TextInput>
-        <Text className="text-black text-base font-semibold bottom-4 pl-4">
-          {" "}
-          Last Round
-        </Text>
-      </View>
-      */}
 
       <View
         style={{ width: 343, height: 53, backgroundColor: "#52E07A" }}
