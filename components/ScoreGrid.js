@@ -97,7 +97,7 @@ export default function ScoreGrid() {
         <Text> Maidah Highflyer</Text>
         <Text className="text-base text-blue-500 font-bold text-center">
           {" "}
-          Select Shot
+          1st Service
         </Text>
         <Text> John</Text>
       </View>
