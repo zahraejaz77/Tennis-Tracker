@@ -31,8 +31,9 @@ export default function PlayerScreen() {
           width: windowWidth,
           height: windowHeight,
         }}
-        className="relative flex-1 justify-around bg-[#DEF8E6]"
+        className=" flex-1 justify-around bg-[#DEF8E6]"
       >
+        {/* // icons */}
         <View className=" flex-row  justify-between align-middle top-7">
           <Ionicons name="arrow-back" size={24} color="black" />
           <View
@@ -77,71 +78,68 @@ export default function PlayerScreen() {
               I am a passionate tennis player, positive and I love food.
             </Text>
           </View>
-          <View className="flex-row space-x-3 w-full self-center justify-around px-4">
-            <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
-              <TouchableOpacity>
-                <Text className="text-center text-sm"> UTR 9.6</Text>
-              </TouchableOpacity>
-            </View>
-            <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
-              <TouchableOpacity>
-                <Text className="text-center text-sm">Add to Favourites</Text>
-              </TouchableOpacity>
-            </View>
-            <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
-              <TouchableOpacity>
-                <Text className="text-center text-sm"> Contact</Text>
-              </TouchableOpacity>
-            </View>
+        </View>
+        {/* ////utr buttons */}
+        <View className="flex-row space-x-3 w-full top-10 self-center justify-around mx-1">
+          <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
+            <TouchableOpacity>
+              <Text className="text-center text-sm"> UTR 9.6</Text>
+            </TouchableOpacity>
           </View>
-          <View className="flex-row space-x-3 w-full self-center justify-around px-4">
-            <View className="w-32 h-12 justify-center self-center align-middle border-2 border-gray-300">
-              <View className="flex-col self-center"></View>
-              <Text className="text-center text-lg font-bold"> 96</Text>
-              <Text className="text-center text-sm text-gray-500">
-                {" "}
-                Matches
-              </Text>
-            </View>
-            <View className="w-32 h-12 justify-center self-center align-middle  border-2 border-gray-300">
-              <View className="flex-col self-center"></View>
-              <Text className="text-center text-lg font-bold"> 3M</Text>
-              <Text className="text-center text-sm text-gray-500">
-                {" "}
-                Followers
-              </Text>
-            </View>
-            <View className="w-32 h-12 justify-center self-center align-middle  border-2 border-gray-300">
-              <View className="flex-col self-center"></View>
-              <Text className="text-center text-lg font-bold"> 96%</Text>
-              <Text className="text-center text-sm text-gray-500">
-                {" "}
-                Win rate
-              </Text>
-            </View>
+          <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
+            <TouchableOpacity>
+              <Text className="text-center text-sm">Add to Favourites</Text>
+            </TouchableOpacity>
+          </View>
+          <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
+            <TouchableOpacity>
+              <Text className="text-center text-sm"> Contact</Text>
+            </TouchableOpacity>
           </View>
         </View>
+        {/* ////stats */}
+        <View className="flex-row space-x-3 w-full self-center justify-around top-12  px-4">
+          <View className="w-32 h-14 justify-center self-center align-middle border-2 border-gray-300">
+            <Text className="text-center text-lg font-bold"> 96</Text>
+            <Text className="text-center text-sm text-gray-500"> Matches</Text>
+          </View>
+          <View className="w-32 h-14 justify-center self-center align-middle  border-2 border-gray-300">
+            <Text className="text-center text-lg font-bold"> 3M</Text>
+            <Text className="text-center text-sm text-gray-500">
+              {" "}
+              Followers
+            </Text>
+          </View>
+          <View className="w-32 h-14 justify-center self-center align-middle  border-2 border-gray-300">
+            <Text className="text-center text-lg font-bold"> 96%</Text>
+            <Text className="text-center text-sm text-gray-500"> Win rate</Text>
+          </View>
+        </View>
+        {/* //// ///// ////text matches played */}
         <View>
-          <Text className="text-black top-10 text-base font-semibold left-7">
+          <Text className="text-black top-12 text-base font-semibold left-7">
             Matches Played
           </Text>
         </View>
+        {/* //// */}
         <ScrollView
           horizontal
           contentContainerStyle={{ paddingHorizontal: 15 }}
           showsHorizontalScrollIndicator={false}
-          className="top-12"
+          className="top-14"
         >
           {matchData.map((item) => (
             <MatchCard key={item.id} data={item} />
           ))}
         </ScrollView>
+        {/* ////text photos */}
         <View>
-          <Text className="text-black bottom-44 text-base font-semibold left-7">
+          <Text className="text-black text-base bottom-44 font-semibold left-7">
             Photos
           </Text>
         </View>
-        {/*<View className="flex-col self-center justify-center space-y-4 top-96">
+        {/* ///photos */}
+        {/* <View className="flex-col self-center justify-center space-y-4 top-96">
           <View className="flex-row self-center justify-center space-x-4">
             <Image
               className="rounded-xl"
@@ -202,7 +200,7 @@ export default function PlayerScreen() {
               style={{ width: 170, height: 175 }}
             />
           </View>
-        </View>*/}
+        </View> */}
       </View>
     </ScreenContainer>
   );
