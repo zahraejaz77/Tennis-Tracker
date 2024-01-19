@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MatchTrackSelectShot() {
   return (
-    <View className="flex-col self-center top-48">
+    <View className="flex-col self-center justify-between">
       <View className="flex-row ">
         <View
           style={{
@@ -12,7 +12,7 @@ export default function MatchTrackSelectShot() {
             borderColor: "#31da60",
             borderWidth: 4,
           }}
-          className=" justify-center"
+          className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
         >
           <TouchableOpacity>
             <Text className="text-center text-base font-bold text-green-700">
@@ -27,7 +27,7 @@ export default function MatchTrackSelectShot() {
             borderColor: "#31da60",
             borderWidth: 4,
           }}
-          className=" justify-center"
+          className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
         >
           <TouchableOpacity>
             <Text className="text-center text-base font-bold text-green-700">
@@ -45,7 +45,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center  text-green-700 text-base font-bold">
@@ -61,7 +61,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-green-700">
@@ -76,7 +76,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-green-700">
@@ -91,7 +91,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-green-700">
@@ -108,7 +108,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center  text-green-700 text-base font-bold">
@@ -124,7 +124,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-green-700">
@@ -139,7 +139,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-green-700">
@@ -154,7 +154,7 @@ export default function MatchTrackSelectShot() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-green-700">

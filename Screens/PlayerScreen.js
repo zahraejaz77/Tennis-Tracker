@@ -126,7 +126,7 @@ export default function PlayerScreen() {
           horizontal
           contentContainerStyle={{ paddingHorizontal: 15 }}
           showsHorizontalScrollIndicator={false}
-          className="top-14"
+          className="top-14 "
         >
           {matchData.map((item) => (
             <MatchCard key={item.id} data={item} />
@@ -137,6 +137,9 @@ export default function PlayerScreen() {
           <Text className="text-black text-base bottom-44 font-semibold left-7">
             Photos
           </Text>
+        </View>
+        <View className="top-48">
+          <VerticalScroll />
         </View>
         {/* ///photos */}
         {/* <View className="flex-col self-center justify-center space-y-4 top-96">

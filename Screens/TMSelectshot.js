@@ -1,22 +1,10 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StatusBar,
-  Platform,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
-import TopMatchBar from "../components/TopMatchBar";
-import UndoButton from "../components/UndoButton";
 import { Ionicons } from "@expo/vector-icons";
-import ScoreGridBallIn from "../components/ScoreGridBallIn";
-import MatchTrackBallIn from "../components/MatchTrackBallIn";
-import ScoreGridSelectShot from "../components/ScoreGridSelectShot";
 import MatchTrackSelectShot from "../components/MatchTrackSelectShot";
+import ScoreGrid from "../components/ScoreGrid";
 
 export default function TMSelectshot({ navigation }) {
-  const ToggleButton = () => {};
   const [isToggled, setIsToggled] = useState(true);
   const handleToggle = () => {
     setIsToggled(!isToggled);
@@ -24,7 +12,7 @@ export default function TMSelectshot({ navigation }) {
 
   return (
     <View className="  flex-1 relative z-40 mx-4 ">
-      <View className="flex-row justify-between top-6">
+      <View className="flex-row justify-between">
         <Text className="text-black font-semibold text-base">
           Track Live Match {"              "}
         </Text>
@@ -32,9 +20,9 @@ export default function TMSelectshot({ navigation }) {
           <Ionicons name="reload" size={24} color="grey" className="ml-11" />
         </TouchableOpacity>
       </View>
-      <ScoreGridSelectShot></ScoreGridSelectShot>
-      <MatchTrackSelectShot></MatchTrackSelectShot>
-      <View className="justify-center self-center bottom-96 my-16 rounded-full w-64 h-8 border-2 border-lime-500 ">
+      <ScoreGrid serviceSelection={"Select Shot"} />
+
+      <View className="justify-center self-center mt-2 rounded-full w-64 h-8 border-2 border-lime-500 ">
         <TouchableOpacity
           className=" rounded-full w-40 h-10 top-1 self-center "
           onPress={handleToggle}
@@ -62,13 +50,14 @@ export default function TMSelectshot({ navigation }) {
           )}
         </TouchableOpacity>
       </View>
+      <MatchTrackSelectShot></MatchTrackSelectShot>
 
       <View
         style={{ width: 200, height: 35, backgroundColor: "#31DA60" }}
-        className=" rounded-full top-9 self-center align-middle"
+        className=" rounded-full self-center align-middle mt-2"
       >
         <TouchableOpacity onPress={() => navigation.navigate("MatchComplete")}>
-          <Text className=" text-white text-xl text-center font-semibold top-1">
+          <Text className=" text-black text-xl text-center font-semibold justify-center">
             Undo
           </Text>
         </TouchableOpacity>

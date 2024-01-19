@@ -1,22 +1,13 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StatusBar,
-  Platform,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
-import TopMatchBar from "../components/TopMatchBar";
-import UndoButton from "../components/UndoButton";
 import { Ionicons } from "@expo/vector-icons";
-import ScoreGridBallIn from "../components/ScoreGridBallIn";
+import ScoreGrid from "../components/ScoreGrid";
 import MatchTrackBallIn from "../components/MatchTrackBallIn";
 
 export default function TMBallPlay({ navigation }) {
   return (
-    <View className="  flex-1 relative z-40 mx-4 ">
-      <View className="flex-row justify-between top-6">
+    <View className="  flex-1 relative mx-4 ">
+      <View className="flex-row justify-between ">
         <Text className="text-black font-semibold text-base">
           Track Live Match {"              "}
         </Text>
@@ -24,14 +15,14 @@ export default function TMBallPlay({ navigation }) {
           <Ionicons name="reload" size={24} color="grey" className="ml-11" />
         </TouchableOpacity>
       </View>
-      <ScoreGridBallIn />
+      <ScoreGrid serviceSelection={"Ball In Play"} />
       <MatchTrackBallIn />
       <View
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
-        className=" rounded-full bottom-3 self-center align-middle"
+        className=" rounded-full self-center align-middle justify-center"
       >
         <TouchableOpacity onPress={() => navigation.navigate("TMSelectshot")}>
-          <Text className=" text-white text-xl text-center font-semibold top-3">
+          <Text className=" text-white text-xl text-center font-semibold">
             Undo
           </Text>
         </TouchableOpacity>

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MatchTrackBallIn() {
   return (
-    <View className="flex-col bottom-5 self-center">
+    <View className="flex-col self-center mt-2">
       <View className="flex-row ">
         <View
           style={{
@@ -12,7 +12,7 @@ export default function MatchTrackBallIn() {
             borderColor: "#31da60",
             borderWidth: 4,
           }}
-          className=" justify-center"
+          className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
         >
           <TouchableOpacity>
             <Text className="text-center text-base font-bold text-green-700">
@@ -27,7 +27,7 @@ export default function MatchTrackBallIn() {
             borderColor: "#31da60",
             borderWidth: 4,
           }}
-          className=" justify-center"
+          className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
         >
           <TouchableOpacity>
             <Text className="text-center text-base font-bold text-green-700">
@@ -45,7 +45,7 @@ export default function MatchTrackBallIn() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className=" justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center  text-red-700 text-base font-bold">
@@ -61,7 +61,7 @@ export default function MatchTrackBallIn() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-red-700">
@@ -78,7 +78,7 @@ export default function MatchTrackBallIn() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center  text-red-700 text-base font-bold">
@@ -94,7 +94,7 @@ export default function MatchTrackBallIn() {
               borderColor: "#31da60",
               borderWidth: 4,
             }}
-            className=" justify-center"
+            className="justify-center rounded-xl border-4 pt-4 pb-4 pl-4 pr-4 mt-1 mb-1 mr-1 ml-1"
           >
             <TouchableOpacity>
               <Text className="text-center text-base font-bold text-red-700">

@@ -25,6 +25,7 @@ import TMBallPlay from "./Screens/TMBallPlay";
 import MatchComplete from "./Screens/MatchComplete";
 import MatchOverview from "./Screens/MatchOverview";
 import TMSelectshot from "./Screens/TMSelectshot";
+import EditProfile from "./Screens/EditProfile";
 
 const TrackStack = createNativeStackNavigator();
 function TrackNewMacth() {
@@ -130,8 +131,8 @@ function Home() {
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="More"
-        component={MoreScreen}
+        name="EditProfile"
+        component={EditProfile}
         options={{ headerShown: false }}
       />
     </Tab.Navigator>
