@@ -1,103 +1,12 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
+import ScoreGrid from "../components/ScoreGrid";
 
-export default function MatchComplete({ navigation }) {
+export default function MatchComplete({ navigation, WinnerName }) {
   return (
-    <View className="relative flex-1 flex-col top-7 align-middle self-center items-stretch">
-      <View className="flex-row">
-        <View className="w-44 border-b-2 border-b-gray-300">
-          <Text>Maidah Highflyer</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-      </View>
-      <View className="flex-row">
-        <View className="w-44 ">
-          <Text>Maidah Highflyer</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-        <View
-          style={{ width: 30, height: 30 }}
-          className="border-2 border-gray-300"
-        >
-          <Text> 12</Text>
-        </View>
-      </View>
+    <View className="relative flex-1 flex-col align-middle self-center items-stretch">
+      <ScoreGrid serviceSelection={"Match Complete"} />
 
-      <View>
-        <Text className="text-base font-semibold text-center top-2">
-          {" "}
-          Match Time: 3:00 1:25 0:46 0:56
-        </Text>
-      </View>
-      <View className="flex-row justify-between border-t-2 border-blue-200 top-3">
-        <Text> Maidah Highflyer</Text>
-
-        <Text> John</Text>
-      </View>
       <View className="top-16 space-y-3">
         <View
           style={{ width: 160, height: 24 }}
@@ -115,7 +24,7 @@ export default function MatchComplete({ navigation }) {
         >
           <TouchableOpacity>
             <Text className=" text-base text-center font-semibold top-3 align-middle">
-              Maida
+              {(WinnerName = "Maida")}
             </Text>
           </TouchableOpacity>
         </View>
@@ -135,7 +44,7 @@ export default function MatchComplete({ navigation }) {
         className=" rounded-full self-center align-middle top-80 flex-row justify-center"
       >
         <TouchableOpacity onPress={() => navigation.navigate("MatchOverview")}>
-          <Text className=" text-white text-xl text-center font-semibold top-3 align-middle">
+          <Text className=" text-black text-xl text-center font-bold top-3 align-middle">
             Match Complete
           </Text>
         </TouchableOpacity>
