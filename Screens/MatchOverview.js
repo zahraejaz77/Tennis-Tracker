@@ -114,10 +114,7 @@ export default function MatchOverview() {
       <View className="flex flex-col self-center">
         <Progress.Bar progress={0.3} width={350} height={20} color="#31DA60" />
       </View>
-      {/* <MatchProgress
-        title={MatchProgress[0]}
-        progress={MatchProgressPercent[0]}
-      /> */}
+      <MatchProgress title="Winners" progress={50} />
       <View className="flex flex-row self-center">
         <Text className="pr-4 font-bold ">Share Match</Text>
         <View className="rounded-full bg-[#C7D2CE] p-2">

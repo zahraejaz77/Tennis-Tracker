@@ -34,18 +34,13 @@ export default function PlayerScreen() {
         className=" flex-1 justify-around bg-[#DEF8E6]"
       >
         {/* // icons */}
-        <View className=" flex-row  justify-between align-middle top-7">
+        <View className=" flex-row justify-between align-middle mt-2 pl-2 pr-2">
           <Ionicons name="arrow-back" size={24} color="black" />
-          <View
-            style={{ width: 40, height: 40, backgroundColor: "#31da60" }}
-            className=" rounded-full "
-          >
-            <View className="top-2 left-2">
-              <Ionicons name="tv-outline" size={24} color="white" />
-            </View>
+          <View className=" rounded-full self-center justify-center align-middle bg-[#31DA60] pl-2 pr-2 pt-2 pb-2">
+            <Ionicons name="tv-outline" size={24} color="white" />
           </View>
         </View>
-        <View className="flex-col self-center justify-around top-9 space-y-2">
+        <View className="flex-col self-center justify-around space-y-2 ">
           <Image
             className=" rounded-full self-center"
             style={{ width: 100, height: 100 }}
@@ -53,52 +48,37 @@ export default function PlayerScreen() {
           />
           <Text className="text-lg self-center">Maida</Text>
           <TouchableOpacity>
-            <View
-              style={{ backgroundColor: "#2ABE5C", width: 164, height: 52 }}
-              className="flex-row rounded-full self-center justify-center space-x-2"
-            >
-              <View className="top-3">
-                <SimpleLineIcons
-                  name="user-following"
-                  size={25}
-                  color="white"
-                />
-              </View>
-              <Text className="text-white text-lg font-bold top-2">
-                {" "}
-                Follow
-              </Text>
+            <View className="flex-row rounded-full self-center align-middle justify-center pt-2 pb-2 pl-4 pr-4 space-x-2 bg-[#31DA60]">
+              <SimpleLineIcons name="user-following" size={25} color="white" />
+              <Text className="text-white text-lg font-bold "> Follow</Text>
             </View>
           </TouchableOpacity>
           <View className="self-center">
-            <Text
-              style={{ width: 232 }}
-              className="text-center justify-center align-middle text-sm font-semibold"
-            >
+            <Text className="text-center justify-center align-middle text-sm font-semibold w-52">
               I am a passionate tennis player, positive and I love food.
             </Text>
           </View>
         </View>
         {/* ////utr buttons */}
-        <View className="flex-row space-x-3 w-full top-10 self-center justify-around mx-1">
-          <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
+        <View className="flex-row space-x-3 w-full self-center justify-around mt-2 pl-2 pr-2">
+          <View className="bg-[#ced6d4] rounded-md  justify-center self-center align-middle pt-2 w-32 pb-2">
             <TouchableOpacity>
               <Text className="text-center text-sm"> UTR 9.6</Text>
             </TouchableOpacity>
           </View>
-          <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
+          <View className="bg-[#ced6d4] rounded-md justify-center self-center align-middle w-32 pt-2 pl-2 pr-2 pb-2">
             <TouchableOpacity>
               <Text className="text-center text-sm">Add to Favourites</Text>
             </TouchableOpacity>
           </View>
-          <View className="bg-[#ced6d4] rounded-md w-32 h-9 justify-center self-center align-middle">
+          <View className="bg-[#ced6d4] rounded-md  justify-center self-center align-middle w-32 pt-2 pl-2 pr-2 pb-2">
             <TouchableOpacity>
               <Text className="text-center text-sm"> Contact</Text>
             </TouchableOpacity>
           </View>
         </View>
         {/* ////stats */}
-        <View className="flex-row space-x-3 w-full self-center justify-around top-12  px-4">
+        <View className="flex-row space-x-3 w-full self-center justify-around px-4 mt-2 ">
           <View className="w-32 h-14 justify-center self-center align-middle border-2 border-gray-300">
             <Text className="text-center text-lg font-bold"> 96</Text>
             <Text className="text-center text-sm text-gray-500"> Matches</Text>
@@ -117,7 +97,7 @@ export default function PlayerScreen() {
         </View>
         {/* //// ///// ////text matches played */}
         <View>
-          <Text className="text-black top-12 text-base font-semibold left-7">
+          <Text className="text-black  text-base font-semibold mt-2 pl-2 ">
             Matches Played
           </Text>
         </View>
@@ -126,7 +106,7 @@ export default function PlayerScreen() {
           horizontal
           contentContainerStyle={{ paddingHorizontal: 15 }}
           showsHorizontalScrollIndicator={false}
-          className="top-14 "
+          className="mt-2"
         >
           {matchData.map((item) => (
             <MatchCard key={item.id} data={item} />
@@ -134,13 +114,9 @@ export default function PlayerScreen() {
         </ScrollView>
         {/* ////text photos */}
         <View>
-          <Text className="text-black text-base bottom-44 font-semibold left-7">
-            Photos
-          </Text>
+          <Text className="text-black text-base font-semibold">Photos</Text>
         </View>
-        <View className="top-48">
-          <VerticalScroll />
-        </View>
+
         {/* ///photos */}
         {/* <View className="flex-col self-center justify-center space-y-4 top-96">
           <View className="flex-row self-center justify-center space-x-4">
