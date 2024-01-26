@@ -40,7 +40,7 @@ export default function Slider1({ navigation }) {
             </Text>
           </View>
           <View className="z-40 absolute self-center w-72 top-96 my-48">
-            <TouchableOpacity onPress={() => navigation.navigate("Slider2")}>
+            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
               <Text className="text-white text-xl font-bold text-right top-32">
                 SKIP
               </Text>
