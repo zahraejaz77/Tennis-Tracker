@@ -96,13 +96,13 @@ export default function EditProfile() {
               key={item.label}
               className="flex-row border-b-2 border-b-gray-300 "
             >
-              <Text className="text-center font-semibold text-xl justify-center pl-4 pt-2 pb-2 ">
+              <Text className="text-center font-bold text-xl justify-center pl-4 pt-2 pb-2 ">
                 {item.label}
               </Text>
               <TextInput
                 placeholder={item.placeholder}
                 placeholderTextColor="gray"
-                className="text-center self center text-xl font-semibold pl-10 align-middle "
+                className="text-center self center text-xl font-semibold pl-10 align-middle justify-center"
               ></TextInput>
             </View>
           ))}

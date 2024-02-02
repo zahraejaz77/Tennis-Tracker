@@ -26,6 +26,7 @@ import MatchComplete from "./Screens/MatchComplete";
 import MatchOverview from "./Screens/MatchOverview";
 import TMSelectshot from "./Screens/TMSelectshot";
 import EditProfile from "./Screens/EditProfile";
+import SelectService from "./Screens/SelectService";
 
 const TrackStack = createNativeStackNavigator();
 function TrackNewMacth() {
@@ -39,6 +40,11 @@ function TrackNewMacth() {
       <TrackStack.Screen
         name="MatchFormat"
         component={MatchFormat}
+        options={{ headerShown: false }}
+      />
+      <TrackStack.Screen
+        name="SelectService"
+        component={SelectService}
         options={{ headerShown: false }}
       />
       <TrackStack.Screen

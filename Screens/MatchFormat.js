@@ -161,7 +161,7 @@ export default function MatchFormat({ navigation }) {
         style={{ width: 343, height: 53, backgroundColor: "#52E07A" }}
         className=" rounded-full self-center align-middle top-5 flex-row justify-center"
       >
-        <TouchableOpacity onPress={() => navigation.navigate("MatchReview")}>
+        <TouchableOpacity onPress={() => navigation.navigate("SelectService")}>
           <Text className=" text-white text-xl text-center font-semibold top-3 align-middle">
             Next
           </Text>
