@@ -3,26 +3,31 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 
 const playerNames = ["Maidah Highflyer", "John"];
-const scores = [
-  (gameScores = { player1: 15, player2: 30 }),
-  (setScores = { player1: 1, player2: 0 }),
-  (matchScores = { player1: 0, player2: 0 }),
-  (totalScores = { player1: 0, player2: 0 }),
-];
+const gameScores = { player1: 0, player2: 0 };
+const setScores = { player1: 0, player2: 0 };
+const matchScores = { player1: 0, player2: 0 };
+const totalScores = { player1: 0, player2: 0 };
+const service = ["1st Service", "2nd Service"];
 
 const matches = ["3:00", "1:25", "0:46", "0:56"]; // Match times
 
 export default function ScoreGrid({ serviceSelection }) {
   return (
     <View>
-      <View className="flex bg-purple-500 flex-row align-middle">
-        <View className="flex-col self-center justify-between bg-gray-600 w-1/2 ">
+      <View className="flex flex-row align-middle">
+        <View className="flex-col self-center justify-between bg-gray-700 w-1/2 ">
           <View className="border-2 rounded-md pt-2 pb-2 flex-row justify-around ">
             <Text className=" font-bold text-center text-white text-lg ml-2">
               {playerNames[0]}
             </Text>
-            <Ionicons name="tennisball" size={20} color="yellow" />
-            <Ionicons name="tennisball" size={20} color="yellow" />
+            {service === "1st Service" ? (
+              <>
+                <Ionicons name="tennisball" size={20} color="yellow" />
+                <Ionicons name="tennisball" size={20} color="yellow" />
+              </>
+            ) : (
+              <Ionicons name="tennisball" size={20} color="yellow" />
+            )}
           </View>
 
           <View className="border-2  rounded-md pt-2 pb-2 flex-row w-full">
@@ -31,39 +36,22 @@ export default function ScoreGrid({ serviceSelection }) {
             </Text>
           </View>
         </View>
-        <View className="flex-row  bg-gray-600 w-1/2">
-          <View className="flex-col rounded-md self-center justify-around w-1/4 h-24 border-2 border-black ">
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {gameScores.player1}
-            </Text>
-            <Text className="text-white font-bold text-xl text-center justify-center">
-              {gameScores.player2}
-            </Text>
-          </View>
-          <View className="flex-col rounded-md self-center justify-around w-1/4 h-24 border-2 border-black">
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {setScores.player1}
-            </Text>
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {setScores.player2}
-            </Text>
-          </View>
-          <View className="flex-col rounded-md self-center justify-around w-1/4 h-24 border-2 border-black">
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {matchScores.player1}
-            </Text>
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {matchScores.player2}
-            </Text>
-          </View>
-          <View className="flex-col rounded-md self-center justify-around w-1/4 h-24 border-2 border-black">
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {totalScores.player1}
-            </Text>
-            <Text className="text-white font-bold text-xl text-center justify-center ">
-              {totalScores.player2}
-            </Text>
-          </View>
+        <View className="flex-row  bg-gray-700 w-1/2">
+          {[gameScores, setScores, matchScores, totalScores].map(
+            (scoreType, index) => (
+              <View
+                key={index}
+                className="flex-col self-center justify-evenly w-1/4 h-24 align-middle"
+              >
+                <Text className="text-white font-bold text-xl text-center justify-center  pt-2  rounded-md h-1/2 border-2 border-black">
+                  {scoreType.player1}
+                </Text>
+                <Text className="text-white font-bold text-xl text-center justify-center  pt-2  rounded-md h-1/2 border-2 border-black">
+                  {scoreType.player2}
+                </Text>
+              </View>
+            )
+          )}
         </View>
       </View>
 
